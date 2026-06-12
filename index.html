@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>罗容 · 个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* 导航栏 */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 1rem;
+        }
+
+        .nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            color: #fff;
+        }
+
+        /* 顶部网格区域 — 致敬 design.html 的网格风格 */
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .grid-box {
+            border: 2px solid #333;
+            background-color: #0a0a0a;
+            border-radius: 4px;
+        }
+
+        .grid-left {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .grid-left .grid-box {
+            flex: 1;
+        }
+
+        .grid-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 280px;
+        }
+
+        .grid-center .avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 3px solid #555;
+            object-fit: cover;
+        }
+
+        .grid-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .grid-right .grid-box {
+            flex: 1;
+        }
+
+        /* 底部主区域 */
+        .main-content {
+            border: 2px solid #333;
+            padding: 2.5rem;
+            text-align: center;
+            background-color: #0a0a0a;
+            border-radius: 4px;
+        }
+
+        .name {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: #aaa;
+            margin-bottom: 0.3rem;
+        }
+
+        .tagline-sub {
+            font-size: 0.95rem;
+            color: #666;
+            margin-top: 0.8rem;
+        }
+
+        .quote {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-top: 1px solid #333;
+            font-size: 0.95rem;
+            color: #888;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav class="nav">
+            <a href="index.html" class="active">首页</a>
+            <a href="about.html">关于我</a>
+            <a href="hobbies.html">兴趣爱好</a>
+        </nav>
+
+        <!-- 顶部装饰网格 -->
+        <div class="hero-grid">
+            <div class="grid-left">
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+            </div>
+            <div class="grid-box grid-center">
+                <img src="profile-photo.jpg" alt="罗容" class="avatar">
+            </div>
+            <div class="grid-right">
+                <div class="grid-box"></div>
+                <div class="grid-box"></div>
+            </div>
+        </div>
+
+        <!-- 主要内容 -->
+        <div class="main-content">
+            <h1 class="name">罗容</h1>
+            <p class="tagline">来自江西宜春</p>
+            <p class="tagline-sub">听音乐 · 打游戏 · 乐观活泼</p>
+
+            <div class="quote">
+                「在熟人面前我比较乐观活泼。<br>
+                通过一年的学习让我意识到大学英语与高中英语截然不同，<br>
+                为了未来的美好生活，我将更加努力认真学习英语。」
+            </div>
+        </div>
+    </div>
+</body>
+</html>

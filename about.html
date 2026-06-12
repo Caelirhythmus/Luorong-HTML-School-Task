@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 · 罗容</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 1rem;
+        }
+
+        .nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            color: #fff;
+        }
+
+        /* 顶部装饰网格 */
+        .deco-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .grid-box {
+            border: 2px solid #333;
+            background-color: #0a0a0a;
+            border-radius: 4px;
+            min-height: 80px;
+        }
+
+        .grid-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100px;
+        }
+
+        .grid-center .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #555;
+            object-fit: cover;
+        }
+
+        /* 内容区域 */
+        .content {
+            border: 2px solid #333;
+            background-color: #0a0a0a;
+            border-radius: 4px;
+            padding: 2.5rem;
+        }
+
+        .page-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-align: center;
+            letter-spacing: 4px;
+        }
+
+        .page-title span {
+            color: #666;
+        }
+
+        .bio-section {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #222;
+        }
+
+        .bio-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .bio-label {
+            font-size: 0.85rem;
+            color: #666;
+            letter-spacing: 2px;
+            margin-bottom: 0.6rem;
+        }
+
+        .bio-text {
+            font-size: 1.05rem;
+            line-height: 2;
+            color: #ddd;
+        }
+
+        .bio-text .highlight {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .info-card {
+            border: 1px solid #333;
+            padding: 1.5rem;
+            border-radius: 4px;
+            background-color: #0d0d0d;
+        }
+
+        .info-card h3 {
+            font-size: 0.9rem;
+            color: #666;
+            letter-spacing: 2px;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-card p {
+            font-size: 1rem;
+            color: #ccc;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav class="nav">
+            <a href="index.html">首页</a>
+            <a href="about.html" class="active">关于我</a>
+            <a href="hobbies.html">兴趣爱好</a>
+        </nav>
+
+        <!-- 顶部装饰网格 -->
+        <div class="deco-grid">
+            <div class="grid-box"></div>
+            <div class="grid-box grid-center">
+                <img src="profile-photo.jpg" alt="罗容" class="avatar">
+            </div>
+            <div class="grid-box"></div>
+        </div>
+
+        <!-- 内容区 -->
+        <div class="content">
+            <h1 class="page-title">关于 <span>我</span></h1>
+
+            <div class="bio-section">
+                <p class="bio-label">PERSONAL PROFILE</p>
+                <p class="bio-text">
+                    我叫 <span class="highlight">罗容</span>，来自江西宜春。
+                    我是一个在熟人面前比较乐观活泼的人。
+                    通过一年的学习，让我意识到大学英语与高中英语截然不同。
+                    为了未来的美好生活，我将更加努力认真学习英语。
+                </p>
+            </div>
+
+            <div class="grid-2col">
+                <div class="info-card">
+                    <h3>基本信息</h3>
+                    <p>
+                        <strong>姓名：</strong>罗容<br>
+                        <strong>籍贯：</strong>江西 · 宜春<br>
+                        <strong>性格：</strong>熟人面前乐观活泼
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h3>座右铭</h3>
+                    <p>
+                        "为了未来的美好生活，<br>
+                        我将更加努力认真学习英语。"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
