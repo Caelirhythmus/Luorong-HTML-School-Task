@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Center Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: sans-serif;
+            padding: 1rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            gap: 1rem;
+            height: 100vh;
+        }
+
+        .top-row {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr;
+            gap: 1rem;
+        }
+
+        .col-left {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .box {
+            border: 2px solid #aaa;
+            background-color: #000;
+        }
+
+        .box-tall {
+            height: 200px;
+        }
+
+        .box-short {
+            height: 100px;
+        }
+
+        .col-center {
+            height: 310px;
+        }
+
+        .col-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .col-right .box:first-child {
+            height: 100px;
+        }
+
+        .col-right .box:last-child {
+            height: 200px;
+        }
+
+        .bottom-section {
+            border: 2px solid #aaa;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem;
+        }
+
+        .title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 1.5;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部网格区域 -->
+        <div class="top-row">
+            <div class="col-left">
+                <div class="box box-tall"></div>
+                <div class="box box-short"></div>
+            </div>
+            <div class="box col-center"></div>
+            <div class="col-right">
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <!-- 底部主区域 -->
+        <div class="bottom-section">
+            <h1 class="title">Vision Center</h1>
+        </div>
+    </div>
+
+    <!-- 底部说明文字 -->
+    <p class="subtitle">
+        A person who only knows what to ask is not<br>
+        worthy of my tenderness
+    </p>
+</body>
+</html>
